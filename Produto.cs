@@ -2,13 +2,17 @@
 
 namespace Classes_Maes_e_classes_Filhas_Heranca;
 
-internal class Produto
+abstract class Produto
 {
     private string imagem;
+    public DateTime DataCompra { get; }
 
     public string Nome { get;  }
     public string Descricao { get; }
     public decimal Preco { get;  }
+    public int Nota { get; private set; }
+    public string Comentario { get; private set; }
+
 
 
     public Produto(string nome, string descricao, decimal preco, string imagem)
@@ -32,5 +36,14 @@ internal class Produto
         }
     }
 
-   
+    public bool EstaExpirado()
+    {
+        return DateTime.Now > DataCompra.AddYears(2);
+    }
+
+    public void Avaliar(int nota, string comentario)
+    {
+        Nota = nota;
+        Comentario = comentario;
+    }
 }

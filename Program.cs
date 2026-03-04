@@ -7,9 +7,13 @@ Console.WriteLine($"{item1.Descricao}");
 Console.WriteLine($"{item1.Preco}");
 Console.WriteLine($"{item1.Estoque}");
 
+item1.Avaliar(10, "Bom demaise");
+Console.WriteLine("Dados do item");
 Console.WriteLine($"Imagem: {item1.Imagem}");
 item1.Imagem = "Nova Imagem";
-Console.WriteLine($"Imagem {item1.Imagem}");
+Console.WriteLine($"Imagem {item1.Imagem}"); 
+Console.WriteLine($"{item1.Comentario}");
+Console.WriteLine($"{item1.Nota}");
 
 
 
@@ -24,4 +28,6 @@ Console.WriteLine($"{item2.LinkDownload}");
 Console.WriteLine($"Imagem: {item2.Imagem}");
 item1.Imagem = "Desmontracao vip";
 Console.WriteLine($"Imagem {item2.Imagem}");
+Console.WriteLine($"Esta Expirado: {item2.EstaExpirado()}");
+
 

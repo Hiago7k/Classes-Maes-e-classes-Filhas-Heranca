@@ -2,7 +2,7 @@
 
 namespace Classes_Maes_e_classes_Filhas_Heranca;
 
- class ProdutoDigital : Produto
+ class ProdutoDigital : Produto, IExpiravel
 {
      private string linkDownload;
 
@@ -26,6 +26,11 @@ namespace Classes_Maes_e_classes_Filhas_Heranca;
             if (value.Length > 0)
                 this.linkDownload = value;
         }
+    }
+
+    public bool EstaExpirado()
+    {
+        return DateTime.Now > DataCompra.AddYears(2);
     }
 
 
