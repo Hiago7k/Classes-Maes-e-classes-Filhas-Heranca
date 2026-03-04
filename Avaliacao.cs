@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace Classes_Maes_e_classes_Filhas_Heranca;
 
-namespace Classes_Maes_e_classes_Filhas_Heranca
+ class Avaliacao
 {
-    internal interface Avaliacaocs
+    public Avaliacao(int nota, string comentario)
     {
+        Nota = nota;
+        Comentario = comentario;
     }
+
+    public int Nota { get; private set; }
+    public string Comentario { get; private set; }
 }

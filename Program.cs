@@ -12,8 +12,8 @@ Console.WriteLine("Dados do item");
 Console.WriteLine($"Imagem: {item1.Imagem}");
 item1.Imagem = "Nova Imagem";
 Console.WriteLine($"Imagem {item1.Imagem}"); 
-Console.WriteLine($"{item1.Comentario}");
-Console.WriteLine($"{item1.Nota}");
+Console.WriteLine($"{item1.Avaliacao.Comentario}");
+Console.WriteLine($"{item1.Avaliacao.Nota}");
 
 
 

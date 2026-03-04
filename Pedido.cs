@@ -18,6 +18,7 @@ internal class Pedido : IExpiravel
     public string Cliente { get;  }
     public DateTime Data { get; }
     public decimal ValorTotal { get;  }
+    public Avaliacao Avaliacao { get; }
 
 
     public void ExibirResumo()

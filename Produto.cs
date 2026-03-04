@@ -10,8 +10,8 @@ abstract class Produto
     public string Nome { get;  }
     public string Descricao { get; }
     public decimal Preco { get;  }
-    public int Nota { get; private set; }
-    public string Comentario { get; private set; }
+    // Aqui invez de termos Notas e Produtos passamos direto o agrupamento deles
+    public Avaliacao Avaliacao { get; private set; }
 
 
 
@@ -43,7 +43,7 @@ abstract class Produto
 
     public void Avaliar(int nota, string comentario)
     {
-        Nota = nota;
-        Comentario = comentario;
+        // Criar uma avaliacao de verdade
+        Avaliacao = new Avaliacao(nota, comentario);
     }
 }
