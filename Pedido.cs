@@ -5,7 +5,7 @@ internal class Pedido : IExpiravel
 {
     private bool pago;
 
-    public Pedido(bool pago, int id, string cliente, DateTime data, decimal valorTotal)
+    public Pedido(int id, string cliente, decimal valorTotal)
     {
         pago = false;
         Id = id;
@@ -39,7 +39,6 @@ internal class Pedido : IExpiravel
     {
         pago = true;
     }
-
 
     public void AdicionarProduto(Produto produto)
     {
