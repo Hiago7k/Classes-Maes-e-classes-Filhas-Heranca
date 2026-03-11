@@ -9,7 +9,7 @@ abstract class Produto
 
     public string Nome { get;  }
     public string Descricao { get; }
-    public decimal Preco { get;  }
+    public decimal Preco { get; protected set; }
     // Aqui invez de termos Notas e Produtos passamos direto o agrupamento deles
     public Avaliacao Avaliacao { get; private set; }
 
@@ -22,6 +22,13 @@ abstract class Produto
         this.Preco = preco;
         this.Imagem = imagem;
     }
+
+    public void AlterarPrecoComDesconto(decimal desconto)
+    {
+        Preco = Preco * (1 - desconto / 100);
+    }
+
+
 
     public string Imagem
     {

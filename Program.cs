@@ -17,17 +17,5 @@ Console.WriteLine($"{item1.Avaliacao.Nota}");
 
 
 
-Console.WriteLine();
-ProdutoDigital item2 = new ProdutoDigital("Vip", "Acesso a Kits", 40.00m, "Vip para", "linkdowndloadbaixaqui");
-
-Console.WriteLine($"{item2.Nome}");
-Console.WriteLine($"{item2.Descricao}");
-Console.WriteLine($"{item2.Preco}");
-Console.WriteLine($"{item2.LinkDownload}");
-
-Console.WriteLine($"Imagem: {item2.Imagem}");
-item1.Imagem = "Desmontracao vip";
-Console.WriteLine($"Imagem {item2.Imagem}");
-Console.WriteLine($"Esta Expirado: {item2.EstaExpirado()}");
 
 
