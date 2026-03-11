@@ -34,7 +34,7 @@ namespace Classes_Maes_e_classes_Filhas_Heranca;
     }
 
 
-    public override void Entegrar(string endereco)
+    public override void Entregar(string endereco)
     {
         Console.WriteLine($"Enviando {Nome} para o email {endereco}");
     }

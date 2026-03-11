@@ -58,5 +58,8 @@ abstract class Produto
         Avaliacao = new Avaliacao(nota, comentario);
     }
 
-    public abstract void Entregar(string endereco);
+    public virtual void Entregar(string endereco) 
+    {
+        Console.WriteLine("Entrega generica");
+    }
 }

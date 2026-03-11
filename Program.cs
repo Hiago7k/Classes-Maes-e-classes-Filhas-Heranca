@@ -13,6 +13,7 @@ item1.AlterarPrecoComDesconto(10.0m); // Utilizando %
 Console.WriteLine($"{item1.Preco}");
 item1.AlterarPrecoComDesconto(10); // Utilizando 10 reais off
 Console.WriteLine($"{item1.Preco}");
+item1.Entregar("Endereco fisico");
 
 
 //item1.Avaliar(10, "Bom demaise");
@@ -30,6 +31,7 @@ Console.WriteLine($"{item2.Nome}");
 Console.WriteLine($"{item2.Descricao}");
 Console.WriteLine($"{item2.Preco}");
 Console.WriteLine($"{item2.Estoque}");
+item2.Entregar("hiago7k@gmail.com");
 
 
 

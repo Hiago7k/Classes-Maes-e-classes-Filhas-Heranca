@@ -23,7 +23,7 @@ namespace Classes_Maes_e_classes_Filhas_Heranca;
         return Estoque > 0;  
     }
 
-    public override void Entegrar(string endereco)
+    public override void Entregar(string endereco)
     {
         Console.WriteLine($"Calculando frete com base no {endereco} e enviado {Nome}");
     }
