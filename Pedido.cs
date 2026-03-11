@@ -12,6 +12,7 @@ internal class Pedido : IExpiravel
         Cliente = cliente;
         Data = DateTime.Now;
         ValorTotal = valorTotal;
+        Produtos = new List<Produto>();
     }
 
     public int Id { get;}
@@ -37,5 +38,11 @@ internal class Pedido : IExpiravel
     public void Pagar()
     {
         pago = true;
+    }
+
+
+    public void AdicionarProduto(Produto produto)
+    {
+        Produtos.Add(produto);
     }
 }
