@@ -28,6 +28,13 @@ internal class Pedido : IExpiravel
         Console.WriteLine($"Pedido #{Id} - Cliente: {Cliente}");
         Console.WriteLine($"Valor Total: R$ {ValorTotal:F2}");
         Console.WriteLine($"Status: {(EstaExpirado() ? "Expirado" : "Válido")}");
+
+        Console.WriteLine("Produtos do pedito");
+
+        foreach (var produto in Produtos)
+        {
+            Console.WriteLine(produto.Nome);
+        }
     }
 
     public bool EstaExpirado()
