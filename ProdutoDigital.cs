@@ -34,4 +34,9 @@ namespace Classes_Maes_e_classes_Filhas_Heranca;
     }
 
 
+    public void Entegrar(string endereco)
+    {
+        Console.WriteLine($"Enviando {Nome} para o email {endereco}");
+    }
+
 }
