@@ -9,6 +9,12 @@ Console.WriteLine($"{item1.Descricao}");
 Console.WriteLine($"{item1.Preco}");
 Console.WriteLine($"{item1.Estoque}");
 
+item1.AlterarPrecoComDesconto(10.0m); // Utilizando %
+Console.WriteLine($"{item1.Preco}");
+item1.AlterarPrecoComDesconto(10); // Utilizando 10 reais off
+Console.WriteLine($"{item1.Preco}");
+
+
 //item1.Avaliar(10, "Bom demaise");
 //Console.WriteLine("Dados do item");
 //Console.WriteLine($"Imagem: {item1.Imagem}");
