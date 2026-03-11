@@ -34,6 +34,8 @@ Console.WriteLine($"{item2.Estoque}");
 item2.Entregar("hiago7k@gmail.com");
 
 Pedido pedido = new Pedido(1, "Hiago", 100.00m);
+pedido.AdicionarProduto(item1);
+pedido.AdicionarProduto(item2);
 
 
 
