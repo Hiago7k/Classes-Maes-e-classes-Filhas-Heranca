@@ -59,5 +59,4 @@ abstract class Produto
     }
 
     public abstract void Entregar(string endereco);
-    
 }
