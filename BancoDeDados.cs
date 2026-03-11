@@ -1,6 +1,6 @@
 ﻿namespace Classes_Maes_e_classes_Filhas_Heranca;
 
-internal class BancoDeDados
+ class BancoDeDados
 {
     List<Produto> produtos = new List<Produto>()
     {
@@ -9,6 +9,8 @@ internal class BancoDeDados
 
     };
 
+
+    // Metodo com um retorno generico
     public Produto BuscarProdutoPeloNome(string nome)
     {
         foreach (var p in produtos)
@@ -17,6 +19,7 @@ internal class BancoDeDados
             {
                 return p;
             }
+
         }
         return null;
     }

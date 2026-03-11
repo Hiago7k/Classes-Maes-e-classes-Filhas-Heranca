@@ -38,8 +38,15 @@ Console.WriteLine();
 Pedido pedido = new Pedido(1, "Hiago", 100.00m);
 pedido.AdicionarProduto(item1);
 pedido.AdicionarProduto(item2);
-
 pedido.ExibirResumo();
+
+BancoDeDados banco = new BancoDeDados();
+var produto = (ProdutoFisico)banco.BuscarProdutoPeloNome("Teclado");
+
+Console.WriteLine($"{produto.Nome}");
+Console.WriteLine($"{produto.Descricao}");
+Console.WriteLine($"{produto.Preco}");
+Console.WriteLine($"{produto.Estoque}");
 
 
 
