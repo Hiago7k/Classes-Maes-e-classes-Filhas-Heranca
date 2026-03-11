@@ -28,6 +28,10 @@ abstract class Produto
         Preco = Preco * (1 - desconto / 100);
     }
 
+    public void AlterarPrecoComDesconto(int desconto)
+    {
+        Preco = Preco - desconto;
+    }
 
 
     public string Imagem
