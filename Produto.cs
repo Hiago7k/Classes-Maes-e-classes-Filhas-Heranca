@@ -57,4 +57,7 @@ abstract class Produto
         // Criar uma avaliacao de verdade
         Avaliacao = new Avaliacao(nota, comentario);
     }
+
+    public abstract void Entregar(string endereco);
+    
 }
