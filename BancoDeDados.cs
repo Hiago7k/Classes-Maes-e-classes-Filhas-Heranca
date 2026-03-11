@@ -8,4 +8,17 @@ internal class BancoDeDados
         new ProdutoFisico("Teclado", "Modelo compacto", 120.00m, "Imagem ilustrativa")
 
     };
+
+    public Produto BuscarProdutoPeloNome(string nome)
+    {
+        foreach (var p in produtos)
+        {
+            if (p.Nome.Equals(nome))
+            {
+                return p;
+            }
+        }
+        return null;
+    }
 }
+
