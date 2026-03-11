@@ -26,16 +26,20 @@ item1.Entregar("Endereco fisico");
 
 Console.WriteLine();
 // Criando ProdutoFisico com outro construtor que possui estoque
-ProdutoFisico item2 = new ProdutoFisico("Teclado", "Modelo Mecanico", 90.00m, "Imagem", 23);
+ProdutoFisico item2 = new ProdutoFisico("Curso", "BackEnd", 1000.00m, "Imagem", 23);
 Console.WriteLine($"{item2.Nome}");
 Console.WriteLine($"{item2.Descricao}");
 Console.WriteLine($"{item2.Preco}");
 Console.WriteLine($"{item2.Estoque}");
 item2.Entregar("hiago7k@gmail.com");
 
+Console.WriteLine();
+
 Pedido pedido = new Pedido(1, "Hiago", 100.00m);
 pedido.AdicionarProduto(item1);
 pedido.AdicionarProduto(item2);
+
+pedido.ExibirResumo();
 
 
 
