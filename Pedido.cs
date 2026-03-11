@@ -19,6 +19,7 @@ internal class Pedido : IExpiravel
     public DateTime Data { get; }
     public decimal ValorTotal { get;  }
     public Avaliacao Avaliacao { get; }
+    public List<Produto> Produtos { get; private set; } // Lista de Produtos Genericos
 
 
     public void ExibirResumo()
