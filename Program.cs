@@ -1,5 +1,7 @@
 ﻿using Classes_Maes_e_classes_Filhas_Heranca;
 
+
+// Criando ProdutoFisico com estoque zerado
 ProdutoFisico item1 = new ProdutoFisico("Teclado", "Modelo Mecanico", 90.00m, "Imagem" );
 
 Console.WriteLine($"{item1.Nome}");
@@ -7,13 +9,21 @@ Console.WriteLine($"{item1.Descricao}");
 Console.WriteLine($"{item1.Preco}");
 Console.WriteLine($"{item1.Estoque}");
 
-item1.Avaliar(10, "Bom demaise");
-Console.WriteLine("Dados do item");
-Console.WriteLine($"Imagem: {item1.Imagem}");
-item1.Imagem = "Nova Imagem";
-Console.WriteLine($"Imagem {item1.Imagem}"); 
-Console.WriteLine($"{item1.Avaliacao.Comentario}");
-Console.WriteLine($"{item1.Avaliacao.Nota}");
+//item1.Avaliar(10, "Bom demaise");
+//Console.WriteLine("Dados do item");
+//Console.WriteLine($"Imagem: {item1.Imagem}");
+//item1.Imagem = "Nova Imagem";
+//Console.WriteLine($"Imagem {item1.Imagem}"); 
+//Console.WriteLine($"{item1.Avaliacao.Comentario}");
+//Console.WriteLine($"{item1.Avaliacao.Nota}");
+
+Console.WriteLine();
+// Criando ProdutoFisico com outro construtor que possui estoque
+ProdutoFisico item2 = new ProdutoFisico("Teclado", "Modelo Mecanico", 90.00m, "Imagem", 23);
+Console.WriteLine($"{item2.Nome}");
+Console.WriteLine($"{item2.Descricao}");
+Console.WriteLine($"{item2.Preco}");
+Console.WriteLine($"{item2.Estoque}");
 
 
 
