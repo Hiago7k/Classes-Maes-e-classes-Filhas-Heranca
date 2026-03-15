@@ -52,3 +52,4 @@ Console.WriteLine($"{produto.Estoque}");
 
 Console.WriteLine("aaaa");
 Console.WriteLine("Salving commits streak on weekend");
+Console.WriteLine("Salving commits streak on weekend");
